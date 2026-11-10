@@ -1,0 +1,6 @@
+{
+  "name": "SANTAKO FÚTBOL",
+  "description": "Simulador integral de gestión futbolística inspirado en la profundidad de PC Fútbol. Dirige tu club desde las categorías inferiores hasta la gloria mundial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

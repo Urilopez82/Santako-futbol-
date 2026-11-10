@@ -1,0 +1,1115 @@
+PC CHAPAS — PROMPT DE AMPLIACIÓN, REALISMO Y NUEVAS FUNCIONALIDADES
+
+Quiero realizar una ampliación importante de PC CHAPAS y corregir varios errores existentes.
+
+IMPORTANTE: NO QUIERO QUE RECONSTRUYAS EL JUEGO DESDE CERO.
+
+Trabaja sobre el proyecto actual, analiza su arquitectura y conserva todas las funcionalidades que ya funcionan.
+
+No elimines características, no simplifiques sistemas existentes y no sustituyas funcionalidades completas por interfaces sin lógica.
+
+Todas las nuevas opciones deben estar conectadas con el resto del videojuego. Si una acción modifica la partida, debe tener consecuencias reales en el mundo, en los datos y en la evolución de la carrera.
+
+Antes de modificar nada, revisa el código y localiza los sistemas implicados. Después implementa los cambios por bloques, comprueba su funcionamiento y evita introducir errores en otras partes del juego.
+
+---
+
+1. REALISMO EN LA SIMULACIÓN DE LAS LIGAS
+
+Actualmente existe un problema importante: en las simulaciones de las ligas siempre suelen ganar los mismos equipos.
+
+En las copas el comportamiento funciona mejor, por lo que debes estudiar qué sistema utiliza la simulación de copas y aprovechar lo que funcione.
+
+Quiero mejorar el motor de resultados de las ligas.
+
+La simulación debe tener en cuenta:
+
+- Nivel individual de los jugadores.
+- Calidad global de la plantilla.
+- Diferencias entre titulares y suplentes.
+- Presupuesto y capacidad económica.
+- Calidad del entrenador.
+- Tácticas y formación.
+- Estado físico.
+- Lesiones.
+- Sanciones.
+- Moral.
+- Factor campo.
+- Reputación.
+- Profundidad de plantilla.
+- Calendario y acumulación de partidos.
+- Factor sorpresa.
+
+No quiero resultados completamente aleatorios, pero tampoco resultados predeterminados por la reputación o el nivel histórico de un club.
+
+Un equipo superior debe tener más posibilidades de ganar, pero no debe ganar siempre.
+
+Deben existir temporadas sorprendentes:
+
+- Equipos modestos que consiguen clasificarse para Europa.
+- Equipos grandes que realizan temporadas decepcionantes.
+- Equipos recién ascendidos que sorprenden.
+- Clubes que pierden competitividad.
+- Nuevos dominadores de las competiciones.
+
+La evolución debe ser diferente en cada partida.
+
+Objetivo: que las ligas tengan una evolución deportiva creíble, variada y no predecible.
+
+2. SIMULACIONES DE LARGA DURACIÓN: CONSERVAR TODA LA HISTORIA
+
+Existe un error grave cuando se realizan simulaciones de 10, 50, 100 o 200 años.
+
+Después de simular, no se conservan correctamente los palmarés, estadísticas, récords y campeones de las temporadas transcurridas.
+
+Quiero corregirlo de forma definitiva.
+
+La simulación debe registrar absolutamente todas las temporadas.
+
+Por ejemplo:
+
+- Si simulo 10 años, deben quedar registrados los 10 campeones de cada competición.
+- Si simulo 50 años, deben quedar registrados los 50 campeones.
+- Si simulo 100 años, deben quedar registrados los 100 campeones.
+- Si simulo 200 años, deben quedar registrados los 200 campeones.
+
+Esto debe aplicarse a todas las competiciones que hayan existido durante esos años.
+
+Debe conservarse:
+
+- Campeón de cada liga.
+- Subcampeón.
+- Clasificación final.
+- Ascensos.
+- Descensos.
+- Campeón de cada copa.
+- Campeón de competiciones continentales.
+- Campeón del Mundial de Clubes.
+- Máximos goleadores.
+- Mejores jugadores.
+- Récords individuales.
+- Récords colectivos.
+- Fichajes históricos.
+- Entrenadores campeones.
+- Trayectorias de clubes.
+
+La historia no debe sobrescribirse al avanzar una nueva temporada.
+
+Crea un registro histórico permanente y organizado por temporada, competición, club y jugador.
+
+Simulación y palmarés del usuario
+
+Hay otro error relacionado: si el usuario simula 10, 50, 100 o 200 años y su equipo gana títulos durante ese periodo, esos títulos no aparecen correctamente en su palmarés personal.
+
+Debe solucionarse.
+
+Todos los títulos obtenidos por el equipo dirigido por el usuario deben incorporarse automáticamente al palmarés de su entrenador.
+
+También deben actualizarse las estadísticas de su carrera.
+
+No importa si el título se ha conseguido jugando un partido o mediante simulación.
+
+El resultado debe ser exactamente el mismo a efectos históricos.
+
+Integridad de los datos
+
+La simulación debe procesar y guardar cada temporada, no limitarse a calcular una fecha final.
+
+Evita que los registros históricos desaparezcan, se dupliquen o se sobrescriban.
+
+Optimiza el proceso para que las simulaciones largas sean eficientes sin sacrificar la información histórica.
+
+3. APARICIÓN Y DESAPARICIÓN DE CLUBES
+
+Actualmente ya existe un sistema de evolución de clubes, pero quiero modificar su funcionamiento.
+
+A partir de los 100 años de partida:
+
+- Deben aparecer nuevos clubes.
+- Deben desaparecer clubes existentes.
+- Pueden producirse fusiones.
+- Pueden surgir nuevos proyectos deportivos.
+- Pueden desaparecer equipos por crisis económicas.
+- Pueden aparecer clubes que crezcan desde categorías inferiores.
+
+Los nuevos clubes deben tener:
+
+- Nombre.
+- País.
+- Ciudad.
+- Escudo.
+- Estadio.
+- Equipación.
+- Presupuesto.
+- Plantilla.
+- Historia inicial.
+- División.
+
+Los clubes desaparecidos deben conservar sus registros históricos y sus títulos.
+
+No deben desaparecer de la historia del fútbol por dejar de existir.
+
+La aparición y desaparición debe producirse progresivamente y de forma coherente.
+
+4. JUGADORES INTERGALÁCTICOS
+
+Amplía el sistema de jugadores para que también puedan existir futbolistas extraterrestres.
+
+A partir de la aparición del fútbol intergaláctico, deben generarse jugadores de diferentes galaxias y planetas.
+
+Cada jugador intergaláctico debe tener:
+
+- Nombre extraterrestre.
+- Nacionalidad o planeta.
+- Bandera o símbolo identificativo.
+- Posición.
+- Edad.
+- Nivel.
+- Potencial.
+- Atributos.
+- Valor de mercado.
+- Salario.
+- Club.
+- Historial deportivo.
+
+Los nombres no deben ser españoles ni repetir patrones de nombres terrestres.
+
+Deben tener una identidad propia y variada.
+
+Los jugadores intergalácticos deben poder ficharse, venderse, retirarse y evolucionar como los terrestres.
+
+5. DIMISIÓN DE SELECCIONES NACIONALES
+
+Actualmente el entrenador puede gestionar clubes y selecciones.
+
+Quiero que exista una opción independiente para dimitir de una selección nacional.
+
+La dimisión de la selección NO debe provocar la dimisión del club que dirige el usuario.
+
+El usuario debe poder:
+
+- Seguir dirigiendo su club.
+- Dimitar únicamente de la selección.
+- Quedar libre para recibir ofertas de otras selecciones.
+- Aceptar posteriormente otra selección.
+
+La dimisión debe quedar registrada en el historial de su carrera.
+
+6. ANUNCIO DE FIRMA DE CONTRATO
+
+Cuando el usuario firme un contrato con un club o selección, debe aparecer una pantalla o ventana emergente informativa.
+
+Debe incluir:
+
+- Nombre del equipo.
+- Escudo o bandera.
+- Cargo.
+- Duración del contrato.
+- Salario.
+- Primas, si existen.
+- Fecha de inicio.
+- Fecha de finalización.
+
+Debe tener una presentación atractiva, como un anuncio oficial de fichaje de un entrenador.
+
+No debe aparecer antes de que el contrato esté realmente confirmado.
+
+7. CANTERA: NOMBRES Y NACIONALIDADES COHERENTES
+
+Actualmente los jugadores de cantera no siempre tienen nombres o nacionalidades coherentes con el país del club.
+
+Quiero corregirlo.
+
+Los jugadores generados en la cantera deben tener mayoritariamente la nacionalidad del país del club.
+
+Sus nombres y apellidos deben corresponder a la cultura y al idioma de ese país.
+
+Ejemplos:
+
+- Club español: nombres y apellidos españoles.
+- Club francés: nombres y apellidos franceses.
+- Club alemán: nombres y apellidos alemanes.
+- Club brasileño: nombres y apellidos brasileños.
+- Club japonés: nombres y apellidos japoneses.
+- Club argentino: nombres y apellidos argentinos.
+
+Debe existir también una pequeña proporción de jugadores extranjeros, según el país, el club y su estructura de cantera.
+
+En equipos intergalácticos, los nombres deben corresponder a sus planetas y civilizaciones.
+
+No quiero que todos los juveniles generados tengan nombres españoles.
+
+8. MERCADO DE FICHAJES: BÚSQUEDA POR CLUB
+
+Amplía el buscador del mercado de fichajes.
+
+Quiero poder buscar jugadores por el club en el que juegan actualmente.
+
+Añade filtros para:
+
+- Nombre del jugador.
+- Club actual.
+- País.
+- Liga.
+- División.
+- Posición.
+- Edad.
+- Nivel.
+- Potencial.
+- Valor de mercado.
+- Situación contractual.
+- Jugadores transferibles.
+- Jugadores cedibles.
+- Jugadores libres.
+
+La búsqueda por club debe mostrar todos los jugadores de su plantilla.
+
+Al seleccionar un jugador, debe abrirse su ficha completa y permitir iniciar una negociación si corresponde.
+
+La búsqueda debe funcionar con todos los equipos, incluidos los clubes intergalácticos.
+
+9. UNIVERSO INTERGALÁCTICO COMPLETO
+
+Actualmente existen equipos intergalácticos a partir de más de 200 años de partida, es decir, desde el año 2226 aproximadamente.
+
+Pero hay varios problemas:
+
+- Los equipos no disputan ligas.
+- Sus jugadores tienen nombres españoles.
+- No tienen una identidad suficientemente diferenciada.
+- No están integrados correctamente en el mercado.
+
+Quiero transformar el fútbol intergaláctico en un universo futbolístico completo.
+
+Ligas galácticas
+
+Los equipos intergalácticos deben disputar sus propias competiciones.
+
+Crea tres divisiones:
+
+- Primera División Galáctica.
+- Segunda División Galáctica.
+- Tercera División Galáctica.
+
+Cada división debe tener:
+
+- Equipos.
+- Calendario.
+- Jornadas.
+- Clasificación.
+- Resultados.
+- Ascensos.
+- Descensos.
+- Campeón.
+- Estadísticas.
+- Palmarés histórico.
+
+Los equipos deben evolucionar de temporada en temporada.
+
+Los mejores equipos pueden ascender y los peores descender.
+
+La competición debe simularse igual que las ligas terrestres.
+
+Copa Intergaláctica
+
+Modifica el formato actual.
+
+Quiero una competición de 64 equipos.
+
+Distribución:
+
+- 44 equipos extraterrestres.
+- 20 equipos terrestres.
+
+Los 20 equipos terrestres deben clasificarse mediante criterios deportivos coherentes, teniendo en cuenta las competiciones terrestres.
+
+Los 44 equipos extraterrestres deben clasificarse según su rendimiento en las ligas galácticas y otros criterios deportivos.
+
+Formato:
+
+- 64 equipos.
+- 16 grupos de 4.
+- Cada equipo juega tres partidos.
+- Clasifican los dos primeros de cada grupo.
+- Se pasa a una ronda de 32 equipos.
+- Eliminatorias a partido único.
+- Dieciseisavos de final.
+- Octavos de final.
+- Cuartos de final.
+- Semifinales.
+- Final.
+
+La competición debe tener calendario, sorteos, resultados, clasificaciones y campeón.
+
+No debe empezar directamente en eliminatorias.
+
+Mercado intergaláctico
+
+Los jugadores extraterrestres deben aparecer en el mercado de fichajes.
+
+Deben poder:
+
+- Ser observados.
+- Recibir ofertas.
+- Ser comprados.
+- Ser vendidos.
+- Ser cedidos.
+- Renovar contratos.
+- Quedar libres.
+
+En su ficha debe aparecer su planeta o procedencia y su bandera o símbolo correspondiente.
+
+Los clubes terrestres deben poder fichar jugadores extraterrestres si las reglas de la competición lo permiten.
+
+Los equipos galácticos deben poder fichar jugadores terrestres.
+
+Identidad visual
+
+Crea banderas, símbolos, escudos y equipaciones originales para los equipos extraterrestres.
+
+Cada planeta debe tener una identidad diferenciada.
+
+No reutilices banderas terrestres para representar civilizaciones extraterrestres.
+
+10. SISTEMA DE PENALTIS: PIEDRA, PAPEL O TIJERA
+
+Quiero que las tandas de penaltis tengan una mecánica especial.
+
+Implementa un sistema basado en piedra, papel o tijera.
+
+En cada lanzamiento:
+
+- El lanzador elige una opción de piedra, papel o tijera.
+- El portero elige una opción de piedra, papel o tijera.
+- Se determina el resultado según las reglas clásicas.
+- El resultado influye en si el penalti se marca o se detiene.
+
+Debe existir una animación y una presentación visual del enfrentamiento.
+
+No debe ser un simple texto.
+
+El sistema debe permitir que el usuario tome decisiones y que la IA también elija.
+
+Incluye:
+
+- Cinco lanzamientos iniciales por equipo.
+- Muerte súbita si continúa el empate.
+- Registro de lanzadores.
+- Registro de aciertos y fallos.
+- Resultado definitivo de la tanda.
+
+La elección de piedra, papel o tijera debe influir en el resultado, pero no debe eliminar completamente el factor deportivo ni convertir todos los penaltis en una elección aleatoria sin sentido.
+
+11. BANNER DE ANUNCIO DE FINAL
+
+Cuando un equipo se clasifique para una final, debe aparecer un banner o anuncio especial.
+
+Debe indicar:
+
+- Nombre de la competición.
+- Equipos finalistas.
+- Escudos.
+- Fecha de la final.
+- Estadio, cuando corresponda.
+
+Debe tener un diseño especial y diferenciado del resto de anuncios.
+
+Solo debe aparecer cuando la clasificación para la final sea real.
+
+No debe confundirse con un anuncio de semifinales, cuartos u otras rondas.
+
+Cuando termine la final, debe aparecer el anuncio del campeón.
+
+12. SIMULADOR: INFORMACIÓN DEL PARTIDO CORRESPONDIENTE
+
+Mejora las pantallas de simulación.
+
+Cuando el usuario seleccione simular un partido, debe aparecer información del encuentro que se va a disputar.
+
+Incluye:
+
+- Competición.
+- Jornada o ronda.
+- Fecha.
+- Estadio.
+- Equipo local.
+- Equipo visitante.
+- Escudos.
+- Clasificación actual.
+- Posición de ambos equipos.
+- Puntos.
+- Últimos resultados.
+- Alineaciones previstas.
+- Bajas por lesión.
+- Sancionados.
+- Datos relevantes del encuentro.
+
+El usuario debe saber qué partido está simulando antes de confirmar.
+
+Después de simular, muestra el resultado y las estadísticas.
+
+No muestres información de otro partido ni datos desactualizados.
+
+13. MODO SELECCIONES NACIONALES Y MUNDIAL
+
+Actualmente el funcionamiento de los Mundiales ha empeorado y el usuario no puede dirigir correctamente a su selección.
+
+Quiero crear una sección permanente llamada SELECCIÓN.
+
+Esta sección debe aparecer siempre en el menú del entrenador.
+
+Cuando el usuario no dirija ninguna selección, la sección aparecerá vacía y mostrará que no tiene ninguna selección asignada.
+
+Cuando acepte dirigir una selección, se activará.
+
+Gestión de selección
+
+Desde esta sección debe poder:
+
+- Consultar jugadores elegibles.
+- Convocar futbolistas.
+- Elegir titulares.
+- Elegir suplentes.
+- Seleccionar formación.
+- Configurar tácticas.
+- Consultar estado físico.
+- Consultar lesiones.
+- Consultar sanciones.
+- Consultar calendario.
+- Consultar convocatorias anteriores.
+
+Las alineaciones y tácticas configuradas deben guardarse.
+
+Mundial
+
+Cuando llegue el Mundial, el usuario debe poder dirigir realmente a su selección.
+
+Debe poder preparar todos los encuentros y disputar cada uno mediante las opciones disponibles:
+
+- SIMULAR.
+- JUGAR, utilizando el juego de chapas.
+
+La alineación y la táctica preparadas previamente deben aplicarse automáticamente a los partidos.
+
+El calendario debe mostrarse claramente, con grupos y fases eliminatorias.
+
+La sección de selección debe estar disponible durante todo el torneo.
+
+Al finalizar, el usuario debe volver a su club sin perder ningún dato ni modificación.
+
+Si no dirige ninguna selección, el Mundial debe simularse normalmente sin bloquear el funcionamiento del juego.
+
+14. NOMBRE REAL DEL ESTADIO SEGÚN CONTRATO
+
+Actualmente quiero que el nombre del campo o estadio dependa de los acuerdos comerciales del club.
+
+Implementa un sistema de derechos de denominación del estadio.
+
+El nombre debe poder cambiar cuando:
+
+- Se firma un contrato de patrocinio.
+- Se renueva el contrato.
+- Finaliza el contrato.
+- Se firma un nuevo acuerdo con otro patrocinador.
+
+El nombre comercial debe aparecer en:
+
+- Pantalla del club.
+- Calendarios.
+- Anuncios de partidos.
+- Pantallas de resultados.
+- Información de la competición.
+- Noticias.
+
+Cuando termina el contrato, el estadio debe recuperar su nombre anterior, salvo que se firme otro acuerdo.
+
+Guarda el nombre histórico del estadio para poder consultar sus denominaciones anteriores.
+
+15. RENOVACIÓN DE CONTRATOS DE JUGADORES
+
+Quiero que el sistema de contratos tenga un funcionamiento realista.
+
+El usuario debe poder gestionar las renovaciones de sus jugadores.
+
+Cada jugador debe mostrar:
+
+- Duración del contrato.
+- Fecha de finalización.
+- Salario.
+- Cláusulas, si existen.
+- Situación de renovación.
+
+El usuario debe poder ofrecer una renovación y negociar las condiciones.
+
+Los jugadores pueden:
+
+- Aceptar.
+- Rechazar.
+- Pedir más salario.
+- Pedir más años.
+- Solicitar primas.
+- Esperar otras ofertas.
+
+Si termina el contrato y no se alcanza un acuerdo, el jugador debe marcharse libre.
+
+No debe desaparecer sin dejar constancia.
+
+Debe quedar registrado:
+
+- Fecha de salida.
+- Club al que se incorpora, si existe.
+- Motivo de la salida.
+- Situación contractual.
+
+Renovaciones durante las simulaciones
+
+Este sistema debe funcionar también cuando se simulan temporadas completas.
+
+Los clubes controlados por la IA deben negociar renovaciones.
+
+Si no renuevan a sus jugadores, estos pueden marcharse libres.
+
+La IA debe tener en cuenta:
+
+- Importancia del jugador.
+- Edad.
+- Nivel.
+- Salario.
+- Presupuesto.
+- Reputación.
+- Interés de otros clubes.
+- Situación deportiva.
+
+Las simulaciones largas deben procesar todas estas decisiones.
+
+16. PALMARÉS Y TRAYECTORIA DEL ENTRENADOR
+
+Amplía la ficha personal del entrenador.
+
+Debe mostrar toda su trayectoria profesional.
+
+Incluye:
+
+- Clubes dirigidos.
+- Selecciones dirigidas.
+- Temporadas en cada equipo.
+- Partidos.
+- Victorias.
+- Empates.
+- Derrotas.
+- Títulos.
+- Ascensos.
+- Descensos.
+- Despidos.
+- Dimisiones.
+- Contratos.
+- Récords personales.
+
+Es especialmente importante que aparezcan los ascensos y descensos que ha vivido el entrenador con sus equipos.
+
+Por ejemplo:
+
+- Ascenso a Segunda División con el Club A.
+- Ascenso a Primera División con el Club B.
+- Descenso a Segunda División con el Club C.
+
+Estos datos deben conservarse durante toda la carrera.
+
+Si el usuario simula 200 años, todos los resultados de su trayectoria deben quedar reflejados correctamente.
+
+No confundas los ascensos y descensos de un club con los vividos por el entrenador: solo deben atribuirse a su historial cuando dirigía efectivamente ese equipo en el momento correspondiente.
+
+17. OJEADORES FUNCIONALES
+
+Actualmente los ojeadores existen, pero no se les pueden solicitar informes correctamente.
+
+Quiero que el sistema funcione de verdad.
+
+El usuario debe poder contratar o asignar ojeadores.
+
+Cada ojeador tendrá:
+
+- Nivel.
+- Experiencia.
+- Países conocidos.
+- Especialidades.
+- Calidad de observación.
+- Coste salarial.
+
+Permite pedir informes sobre:
+
+- Un jugador concreto.
+- Un club.
+- Una liga.
+- Un país.
+- Una posición.
+- Jugadores jóvenes.
+- Futuras promesas.
+- Jugadores transferibles.
+
+Los informes deben tardar un tiempo razonable según la dificultad de la búsqueda y la calidad del ojeador.
+
+El resultado debe incluir:
+
+- Nivel estimado.
+- Potencial estimado.
+- Precio aproximado.
+- Salario.
+- Situación contractual.
+- Características.
+- Recomendación.
+
+Los informes no deben revelar siempre todos los datos con exactitud.
+
+Los mejores ojeadores deben proporcionar información más precisa.
+
+Los ojeadores deben funcionar también con jugadores extraterrestres.
+
+18. CUERPO TÉCNICO: PETICIONES, MORAL Y CONSECUENCIAS
+
+Actualmente existen contradicciones en las peticiones del cuerpo técnico.
+
+El segundo entrenador, entrenador de porteros, masajistas, enfermeros y otros empleados piden subir de nivel o mejorar sus condiciones, pero el sistema no está bien conectado.
+
+Quiero un sistema coherente de gestión del personal.
+
+Cada empleado debe tener:
+
+- Cargo.
+- Nivel.
+- Experiencia.
+- Salario.
+- Contrato.
+- Moral.
+- Calidad profesional.
+- Expectativas.
+
+Los empleados pueden solicitar:
+
+- Mejora salarial.
+- Renovación.
+- Mejora de nivel.
+- Nuevas responsabilidades.
+- Mejores instalaciones.
+
+El usuario debe poder aceptar o rechazar estas peticiones.
+
+Las decisiones deben tener consecuencias.
+
+Si un empleado está descontento:
+
+- Puede bajar su moral.
+- Puede empeorar su rendimiento.
+- Puede solicitar salir del club.
+- Puede rechazar una renovación.
+
+Influencia deportiva
+
+El cuerpo técnico debe influir realmente en el rendimiento del equipo.
+
+Segundo entrenador:
+
+- Ayuda táctica.
+- Análisis de rivales.
+- Preparación de partidos.
+
+Entrenador de porteros:
+
+- Mejora de los porteros.
+- Rendimiento específico.
+
+Preparadores físicos:
+
+- Condición física.
+- Recuperación.
+- Prevención de lesiones.
+
+Masajistas y fisioterapeutas:
+
+- Recuperación muscular.
+- Reducción de tiempos de recuperación cuando corresponda.
+
+Médico:
+
+- Diagnóstico.
+- Tratamiento.
+- Seguimiento de lesiones.
+
+No quiero empleados decorativos: todos deben tener una función real.
+
+19. NUEVA SECCIÓN: ENFERMERÍA
+
+Crea una sección específica llamada ENFERMERÍA.
+
+Debe mostrar todos los jugadores lesionados del club.
+
+Para cada jugador incluye:
+
+- Nombre.
+- Posición.
+- Lesión.
+- Gravedad.
+- Fecha de lesión.
+- Tiempo estimado de recuperación.
+- Estado actual.
+- Tratamiento.
+- Médico responsable.
+
+El usuario debe poder consultar la evolución de cada lesión.
+
+Tratamientos
+
+Los tratamientos deben depender del nivel del médico contratado y de los recursos disponibles.
+
+Un médico de mayor nivel debe:
+
+- Diagnosticar con más precisión.
+- Recomendar mejores tratamientos.
+- Reducir los tiempos de recuperación dentro de límites razonables.
+- Evitar complicaciones.
+- Mejorar la prevención.
+
+No quiero que un médico pueda curar instantáneamente cualquier lesión.
+
+Las lesiones deben tener gravedad y tiempos coherentes.
+
+Los jugadores lesionados deben aparecer correctamente en alineaciones y convocatorias.
+
+Cuando se recuperen, deben volver automáticamente a estar disponibles.
+
+20. NUEVA SECCIÓN: VIDA PRIVADA DEL ENTRENADOR
+
+Quiero incorporar una dimensión personal y económica a la carrera del entrenador.
+
+Crea una nueva sección llamada VIDA PRIVADA.
+
+En ella se acumulará el dinero personal que el entrenador gana a lo largo de su trayectoria.
+
+Debe estar separado del presupuesto del club.
+
+Ingresos personales
+
+El entrenador recibe ingresos por:
+
+- Salario del club.
+- Salario de la selección.
+- Primas por títulos.
+- Primas por objetivos.
+- Derechos de imagen.
+- Acuerdos publicitarios.
+- Otros ingresos profesionales.
+
+Los ingresos deben abonarse automáticamente cuando corresponda.
+
+El usuario debe poder consultar:
+
+- Saldo personal.
+- Ingresos acumulados.
+- Gastos.
+- Historial económico.
+- Contratos.
+- Próximos pagos.
+
+Primas por títulos
+
+Crea un sistema de primas por conseguir trofeos.
+
+Los contratos pueden incluir primas por:
+
+- Ganar la liga.
+- Ganar la copa.
+- Ganar competiciones continentales.
+- Ganar el Mundial de Clubes.
+- Conseguir ascensos.
+- Cumplir objetivos.
+
+Las primas deben estar vinculadas al contrato correspondiente.
+
+Cuando el entrenador consiga el objetivo, el importe debe añadirse automáticamente a su cuenta personal.
+
+Compra de vehículos
+
+Permite comprar coches de diferentes marcas ficticias o reales cuando los recursos gráficos y derechos lo permitan.
+
+Cada vehículo debe tener:
+
+- Modelo.
+- Imagen.
+- Precio.
+- Categoría.
+- Descripción.
+
+Incluye vehículos económicos, deportivos, de lujo y exclusivos.
+
+El precio debe ser coherente con el dinero disponible.
+
+La compra debe descontarse del patrimonio personal.
+
+Los vehículos adquiridos deben aparecer en el garaje personal.
+
+Compra de viviendas
+
+Permite comprar viviendas de distintos tipos:
+
+- Apartamentos.
+- Casas.
+- Chalets.
+- Mansiones.
+- Viviendas de lujo.
+
+Cada vivienda debe tener:
+
+- Ubicación.
+- Precio.
+- Imagen.
+- Descripción.
+- Categoría.
+
+Las viviendas deben quedar registradas en el patrimonio del entrenador.
+
+La compra debe descontarse del saldo personal.
+
+No permitas comprar bienes si no hay dinero suficiente.
+
+21. FUNDAR UN CLUB PROPIO
+
+Esta debe ser una de las funcionalidades especiales de PC CHAPAS.
+
+Quiero que el entrenador pueda fundar su propio club si dispone de suficiente dinero personal.
+
+Debe ser una inversión muy elevada y una decisión importante de su carrera.
+
+Condiciones
+
+- El entrenador debe tener patrimonio suficiente.
+- Debe pagar el coste de fundación.
+- El club debe fundarse en el país donde reside el entrenador.
+- Debe elegir nombre.
+- Debe elegir ciudad.
+- Debe crear escudo.
+- Debe elegir colores.
+- Debe crear equipaciones.
+- Debe establecer nombre del estadio.
+- Debe disponer de presupuesto inicial.
+
+El coste debe ser elevado y variar según el país y las condiciones de fundación.
+
+Comienzo en categoría amateur
+
+El club creado debe comenzar en una división amateur situada por debajo de las divisiones profesionales existentes.
+
+Debe disputar una competición amateur con equipos inventados.
+
+Los equipos de esa categoría deben tener:
+
+- Nombre.
+- Escudo.
+- Jugadores.
+- Estadios.
+- Presupuestos.
+- Clasificación.
+- Calendario.
+
+El club fundado por el usuario debe empezar desde cero.
+
+Ascenso al sistema oficial
+
+Si el club termina primero en su competición amateur y cumple los requisitos establecidos, asciende a la división oficial más baja del país.
+
+A partir de ese momento se integra en el sistema normal de ligas.
+
+Debe aparecer en:
+
+- Clasificaciones.
+- Calendarios.
+- Mercado de fichajes.
+- Estadísticas.
+- Competiciones.
+- Historia del fútbol.
+- Base de datos mundial.
+
+El club pasa a funcionar como cualquier otro equipo del país.
+
+Reorganización de las divisiones
+
+Al integrarse el nuevo club en el sistema oficial, reorganiza las plazas de las divisiones de manera coherente.
+
+La entrada del nuevo club debe desplazar al equipo que corresponda según el sistema de plazas definido, haciendo que un club real descienda a la categoría amateur si esa es la regla de integración establecida.
+
+No elimines al club desplazado: debe conservar su plantilla, historia y registros y poder competir en amateur para intentar regresar.
+
+Evita crear divisiones con equipos duplicados o un número incorrecto de participantes.
+
+El entrenador como propietario y técnico
+
+El entrenador fundador debe poder dirigir su propio club.
+
+Ese club pasa a ser su equipo principal.
+
+Debe poder:
+
+- Contratar jugadores.
+- Contratar empleados.
+- Gestionar el presupuesto.
+- Crear instalaciones.
+- Fichar entrenadores.
+- Ampliar el estadio.
+- Negociar patrocinios.
+- Competir en ligas y copas.
+
+La fundación debe tener consecuencias reales en la carrera.
+
+Si el entrenador ya dirige otro club, establece un procedimiento para abandonar ese cargo o finalizar el contrato antes de asumir el nuevo equipo, sin duplicar puestos incompatibles.
+
+El club fundado debe permanecer en el universo incluso si el entrenador lo abandona.
+
+---
+
+22. PRUEBAS OBLIGATORIAS
+
+No declares terminada ninguna de estas mejoras sin comprobar que funciona.
+
+Realiza pruebas específicas:
+
+Simulación e historia
+
+1. Simular 10 años y comprobar 10 campeones de cada competición.
+2. Simular 50 años y comprobar 50 temporadas registradas.
+3. Simular 100 años y comprobar palmarés, estadísticas y récords.
+4. Simular 200 años y comprobar los 200 años de historia.
+5. Comprobar que los títulos del equipo del usuario aparecen en su palmarés.
+6. Comprobar que los ascensos y descensos aparecen en su historial de entrenador.
+7. Comprobar que no hay duplicados ni registros perdidos.
+
+Mercado y contratos
+8. Buscar jugadores por club.
+9. Recibir ofertas por transferibles.
+10. Renovar jugadores.
+11. Comprobar salidas libres.
+12. Simular renovaciones de clubes controlados por IA.
+
+Selecciones
+13. DIMITIR de una selección sin abandonar el club.
+14. Convocar jugadores.
+15. Configurar táctica y alineación.
+16. Disputar un Mundial.
+17. Comprobar que el club conserva su estado durante el Mundial.
+
+Cuerpo técnico
+18. Solicitar informes a ojeadores.
+19. Recibir peticiones de empleados.
+20. Comprobar consecuencias en moral y rendimiento.
+21. Consultar enfermería.
+22. Aplicar tratamientos y comprobar recuperaciones.
+
+Vida privada
+23. Recibir salarios.
+24. Cobrar primas por títulos.
+25. Cobrar derechos de imagen.
+26. Comprar vehículos.
+27. Comprar viviendas.
+28. Comprobar saldo y patrimonio.
+
+Universo intergaláctico
+29. Simular las tres divisiones galácticas.
+30. Comprobar ascensos y descensos.
+31. Buscar jugadores extraterrestres.
+32. Fichar jugadores intergalácticos.
+33. Disputar la Copa Intergaláctica de 64 equipos.
+34. Comprobar que participan 20 equipos terrestres.
+
+Fundación de clubes
+35. Fundar un club.
+36. Crear su identidad.
+37. Disputar la liga amateur.
+38. Conseguir el ascenso.
+39. Integrarlo en la división oficial.
+40. Comprobar la reorganización de plazas.
+41. Comprobar que el club queda guardado en la historia.
+
+---
+
+23. ORDEN DE TRABAJO
+
+No intentes realizar todos los cambios de golpe si eso pone en riesgo el proyecto.
+
+Organiza el trabajo en estos bloques:
+
+BLOQUE 1 — SIMULACIÓN E HISTORIA
+
+- Realismo de las ligas.
+- Simulaciones de larga duración.
+- Palmarés.
+- Récords.
+- Estadísticas.
+- Historial del entrenador.
+- Ascensos y descensos.
+
+BLOQUE 2 — EVOLUCIÓN DEL MUNDO
+
+- Nuevos clubes.
+- Desaparición de clubes.
+- Jugadores intergalácticos.
+- Ligas galácticas.
+- Copa Intergaláctica de 64 equipos.
+- Mercado extraterrestre.
+
+BLOQUE 3 — CARRERA Y GESTIÓN DEPORTIVA
+
+- Dimisión de selecciones.
+- Contratos.
+- Renovaciones.
+- Jugadores libres.
+- Búsqueda de mercado por club.
+- Ojeadores.
+
+BLOQUE 4 — CUERPO TÉCNICO Y SALUD
+
+- Peticiones de empleados.
+- Moral.
+- Rendimiento.
+- Enfermería.
+- Médicos.
+- Tratamientos.
+
+BLOQUE 5 — VIDA PRIVADA
+
+- Salarios.
+- Primas.
+- Derechos de imagen.
+- Coches.
+- Viviendas.
+- Patrimonio.
+
+BLOQUE 6 — FUNDACIÓN DE CLUBES
+
+- Crear club.
+- Liga amateur.
+- Ascenso.
+- Integración en las divisiones oficiales.
+- Gestión como propietario y entrenador.
+
+BLOQUE 7 — PRESENTACIÓN Y CONTROL DE CALIDAD
+
+- Anuncios de contratos.
+- Banner de finales.
+- Información previa a partidos simulados.
+- Nombre comercial de estadios.
+- Penaltis de piedra, papel o tijera.
+- Revisión global de interfaz.
+
+Al finalizar cada bloque, ejecuta las pruebas correspondientes.
+
+No pases al siguiente bloque si existen errores importantes.
+
+INSTRUCCIÓN FINAL
+
+Quiero que PC CHAPAS evolucione hacia un simulador de fútbol profundo, realista y prácticamente infinito.
+
+El mundo debe seguir funcionando aunque el usuario avance 200 años.
+
+Las temporadas deben dejar una historia completa, los clubes deben evolucionar, los jugadores deben aparecer y retirarse, los entrenadores deben construir carreras y el universo intergaláctico debe tener sus propias ligas y estrellas.
+
+Quiero que la vida del entrenador también tenga importancia: sus contratos, su patrimonio, sus compras y la posibilidad de fundar un club desde cero.
+
+Empieza por analizar el código actual y detectar los problemas de simulación y conservación histórica. No modifiques todavía sistemas que no sean necesarios para el primer bloque. Después implementa el BLOQUE 1 y comprueba los resultados antes de continuar.

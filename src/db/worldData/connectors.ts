@@ -1,0 +1,86 @@
+import { DataSourceConnector } from '../../types/worldDatabase';
+
+export const DATA_CONNECTORS: DataSourceConnector[] = [
+  {
+    id: 'conn_football_data_org',
+    name: 'football-data.org API v4',
+    url: 'https://api.football-data.org/v4/',
+    description: 'API REST europea con calendarios oficiales, clasificaciones en directo y plantillas de las 12 principales ligas de UEFA y Copa del Mundo.',
+    providedFields: [
+      'Competiciones principales (LaLiga, Premier, Serie A, Champions)',
+      'Equipos participantes oficiales',
+      'Resultados oficiales y calendarios de partidos',
+      'Clasificación en tiempo real',
+      'Nombres y dorsales de jugadores en plantilla',
+      'Nacionalidad y fecha de nacimiento de jugadores',
+    ],
+    missingFields: [
+      'Categorías inferiores (Tercera, Segunda y Primera Federación)',
+      'Atributos técnicos, físicos y mentales detallados (velocidad, regate, pase, etc.)',
+      'Salarios reales y contratos completos (cláusulas de rescisión)',
+      'Instalaciones y aforo detallado de estadios modestos',
+      'Cuerpos técnicos completos (médicos, analistas, preparadores)',
+    ],
+    status: 'DOCUMENTADO',
+    lastChecked: '2026-11-01',
+    licenseNotes: 'Plan gratuito limitado a 10 req/min para ligas top. Plan estándar para cobertura completa.',
+  },
+  {
+    id: 'conn_rfef_oficial',
+    name: 'Real Federación Española de Fútbol (RFEF - Actas y Licencias)',
+    url: 'https://rfef.es/es/competiciones',
+    description: 'Censo oficial federativo de Primera, Segunda, Primera Federación, Segunda Federación y Tercera Federación, además de Copa del Rey.',
+    providedFields: [
+      'Pirámide federativa completa española',
+      'Licencias oficiales de futbolistas y entrenadores',
+      'Actas arbitrales oficiales con minutos, goles, tarjetas y sustituciones',
+      'Reglamentos de ascensos, descensos y desempates particulares',
+      'Sanciones y comités disciplinarios',
+    ],
+    missingFields: [
+      'Valoraciones numéricas de atributos de juego (CA/PA)',
+      'Cláusulas de rescisión privadas de contratos profesionales',
+      'Masa salarial confidencial de clubes',
+    ],
+    status: 'SINCRONIZADO',
+    lastChecked: '2026-11-02',
+    licenseNotes: 'Dominio público federativo e información de transparencia deportiva.',
+  },
+  {
+    id: 'conn_clubes_historicos',
+    name: 'Censo Histórico de Clubes y Estadios de Fútbol Modesto',
+    url: 'internal://santako_futbol/historical_registry',
+    description: 'Base de datos histórica documentada de clubes fundados desde 1898 a la actualidad, con especial cobertura de Santa Coloma de Gramenet y comarcas catalanas.',
+    providedFields: [
+      'Años de fundación y transformaciones societarias (SAD)',
+      'Estadios históricos, aforos, medidas y tipo de césped',
+      'Palmarés oficial y efemérides (Copa del Rey, ascensos históricos)',
+      'Colores oficiales y patrones de camisetas (escapulario, arlequinado, quatribarrada)',
+      'Rivalidades tradicionales y derbis locales documentados',
+    ],
+    missingFields: [
+      'Traspasos en tiempo real durante mercados cerrados',
+    ],
+    status: 'ACTIVO',
+    lastChecked: '2026-11-03',
+    licenseNotes: 'Recopilación histórica documentada bajo licencia abierta para SANTAKO FÚTBOL.',
+  },
+  {
+    id: 'conn_stats_engine_santako',
+    name: 'Motor Estadístico & Estimador Proporcional SANTAKO',
+    url: 'internal://santako_futbol/engine_estimator',
+    description: 'Módulo heurístico de SANTAKO FÚTBOL para estimar atributos no públicos a partir de categorías, edad, minutos jugados y rendimiento histórico.',
+    providedFields: [
+      'Habilidad actual estimada (CA) y techo de potencial (PA)',
+      'Atributos físicos, técnicos y mentales calculados (1-99)',
+      'Valores de mercado proporcionales basados en edad, posición y categoría',
+      'Presupuestos y límites salariales modelados según nivel de categoría',
+    ],
+    missingFields: [
+      'No reemplaza datos oficiales cuando están disponibles y verificados.',
+    ],
+    status: 'ACTIVO',
+    lastChecked: '2026-11-03',
+    licenseNotes: 'Algoritmo nativo de simulación deportiva de SANTAKO FÚTBOL.',
+  },
+];

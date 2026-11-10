@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0b1120;
+    color: #f1f5f9;
+  }
+}
+
+.font-condensed {
+  font-family: 'Barlow Condensed', system-ui, sans-serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Modern Football Simulation Glass Panels */
+.pcf-panel {
+  background: linear-gradient(180deg, rgba(18, 26, 43, 0.95) 0%, rgba(10, 15, 28, 0.98) 100%);
+  border: 1px solid rgba(71, 85, 105, 0.45);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.pcf-panel-card {
+  background: linear-gradient(180deg, rgba(22, 32, 54, 0.9) 0%, rgba(12, 18, 32, 0.95) 100%);
+  border: 1px solid rgba(59, 73, 99, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border-radius: 0.875rem;
+}
+
+.pcf-embossed-header {
+  background: linear-gradient(180deg, #182236 0%, #0d1424 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pcf-embossed-pill {
+  background: linear-gradient(180deg, #1e2c45 0%, #111a2d 100%);
+  border: 1px solid rgba(94, 114, 148, 0.45);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Modern Professional Football Roster Table */
+.pcf-table-container {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+.pcf-table-header {
+  background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-bottom: 2px solid #94a3b8;
+  color: #1e293b;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pcf-table-row {
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.12s ease;
+}
+
+.pcf-table-row:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.pcf-table-row:hover {
+  background-color: #e0f2fe;
+}
+
+/* Modern Precision Action Buttons */
+.pcf-btn {
+  background: linear-gradient(180deg, #27354d 0%, #162033 100%);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 2px 6px rgba(0, 0, 0, 0.35);
+  color: #f8fafc;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.625rem;
+}
+
+.pcf-btn:hover {
+  background: linear-gradient(180deg, #374a6b 0%, #22304d 100%);
+  border-color: rgba(186, 207, 237, 0.55);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 4px 10px rgba(0, 0, 0, 0.45);
+  transform: translateY(-1px);
+}
+
+.pcf-btn:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.pcf-btn-gold {
+  background: linear-gradient(180deg, #fef08a 0%, #fbbf24 22%, #d97706 65%, #92400e 100%);
+  border: 1px solid #fef08a;
+  border-bottom: 2px solid #78350f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 4px 14px rgba(217, 119, 6, 0.5);
+  color: #1a0f00;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  font-weight: 800;
+  letter-spacing: 0.025em;
+}
+
+.pcf-btn-gold:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #fde047 25%, #ea580c 75%, #9a3412 100%);
+  border-color: #ffffff;
+  border-bottom-color: #7c2d12;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 6px 20px rgba(245, 158, 11, 0.65);
+  transform: translateY(-1px);
+}
+
+.pcf-btn-gold-dark {
+  background: linear-gradient(180deg, #2d2010 0%, #161007 100%);
+  border: 1px solid rgba(245, 158, 11, 0.55);
+  box-shadow: inset 0 1px 0 rgba(251, 191, 36, 0.35), 0 3px 10px rgba(0, 0, 0, 0.5);
+  color: #fef08a;
+  font-weight: 700;
+}
+
+.pcf-btn-gold-dark:hover {
+  background: linear-gradient(180deg, #3d2c16 0%, #20170a 100%);
+  border-color: #fde047;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 5px 14px rgba(217, 119, 6, 0.4);
+}
+
+.pcf-btn-emerald {
+  background: linear-gradient(180deg, #34d399 0%, #10b981 25%, #059669 70%, #064e3b 100%);
+  border: 1px solid #6ee7b7;
+  border-bottom: 2px solid #022c22;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 4px 14px rgba(5, 150, 105, 0.45);
+  color: #022c22;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-weight: 800;
+}
+
+.pcf-btn-emerald:hover {
+  background: linear-gradient(180deg, #6ee7b7 0%, #34d399 30%, #059669 80%, #064e3b 100%);
+  border-color: #a7f3d0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 6px 18px rgba(16, 185, 129, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Authentic Grass Pitch Stadium Backgrounds */
+.pcf-pitch-bg {
+  background-color: #06190f;
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(9, 38, 23, 0.92) 0px,
+      rgba(9, 38, 23, 0.92) 90px,
+      rgba(5, 22, 13, 0.92) 90px,
+      rgba(5, 22, 13, 0.92) 180px
+    ),
+    radial-gradient(ellipse 95% 65% at 50% -10%, rgba(34, 197, 94, 0.16) 0%, transparent 80%),
+    radial-gradient(ellipse 100% 50% at 50% 110%, rgba(16, 185, 129, 0.12) 0%, transparent 85%);
+  background-attachment: fixed;
+}
+
+.pcf-pitch-surface {
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(22, 85, 42, 0.95),
+      rgba(22, 85, 42, 0.95) 20px,
+      rgba(16, 68, 33, 0.95) 20px,
+      rgba(16, 68, 33, 0.95) 40px
+    );
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.pcf-pitch-chalk {
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+}
+
+/* Modern Overall Rating Badges */
+.pcf-rating-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 900;
+  border-radius: 6px;
+  padding: 1px 7px;
+  line-height: 1.25;
+}
+
+.pcf-rating-super {
+  background: linear-gradient(180deg, #dc2626 0%, #991b1b 100%);
+  color: #ffffff;
+  border: 1px solid #f87171;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35), 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.pcf-rating-high {
+  background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%);
+  color: #ffffff;
+  border: 1px solid #fb923c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.pcf-rating-mid {
+  background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  border: 1px solid #38bdf8;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.pcf-rating-low {
+  background: linear-gradient(180deg, #475569 0%, #334155 100%);
+  color: #ffffff;
+  border: 1px solid #64748b;
+}
+
+/* Mini Tactical Pitch */
+.pcf-grass {
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      #1e5f29,
+      #1e5f29 12px,
+      #185422 12px,
+      #185422 24px
+    );
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom dark tactical scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.7);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.9);
+}
+
